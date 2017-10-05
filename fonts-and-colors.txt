@@ -1,0 +1,13 @@
+// Navbar
+#F9F0EB
+
+// Background
+#F7F7F7 ou #FFF
+
+// Text
+#F9F0EB
+
+// Font Roboto Bold Condensed
+
+// functions
+#F9F0EB #FDFDFD #F9F0EB

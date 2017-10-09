@@ -1,0 +1,28 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 { font-size: 3.5rem;}
+
+header {
+    background: #F9F0EB;
+    height: 60px;
+}
+
+header img {
+    width: 40px;
+}
+
+#slideshare {
+    background: #FFFFFF;
+    box-shadow: 0 6px 3px;
+}
+
+#slideshare h1 {
+    margin: 15px;
+}

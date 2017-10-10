@@ -11,3 +11,5 @@
 
 // functions
 #F9F0EB #FDFDFD #F9F0EB
+
+// quando der hover no cartão, colocar uma sombra

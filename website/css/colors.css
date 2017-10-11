@@ -2,3 +2,37 @@
     /* Page font color */
     color: #333333;
 }
+
+header {
+    background: #F9F0EB;
+}
+
+/* Colors configurations in main content */
+main {
+    
+}
+
+.function-1 {
+    background: #F9F0EB;
+}
+.function-2 {
+    background: #FDFDFD;
+}
+
+.developers-1 {
+
+}
+
+.developers-2 {
+
+}
+
+.newsletter {
+    background: #ffffff;
+}
+
+footer {
+    background: #F9F0EB;
+}
+
+

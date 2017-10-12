@@ -38,7 +38,7 @@ header img {
 /* Create a standard width for all images */
 .carousel-inner .carousel-item > img {
     width: 1280px;
-    height: 720px;
+    height: 800px;
 }
 
 /* Scope content styles */
@@ -80,7 +80,7 @@ header img {
     flex-basis: 550px;
     margin: 5px;
     padding: 20px;
-    
+
     transition: box-shadow .5s;
 }
 /* Material effect */
@@ -144,6 +144,7 @@ section .newsletter {
     border-style: none;
     font-style: italic;
 }
+
 .newsletter form button {
     margin: 10px;
     font-weight: 700;

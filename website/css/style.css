@@ -49,6 +49,7 @@ header img {
     padding: 30px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     transition: all .5s;
 }
@@ -94,7 +95,24 @@ header img {
 }
 
 /* Developers content styles */
-
+#developing {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+#developing > * {
+    margin: 20px auto;
+    flex-basis: 550px;
+}
+.developing {
+    width: 40%;
+}
+.developing img {
+    width: 100%;
+}
+.developing footer h3 {
+    text-align: center;
+}
 
 /* Footer Styles */
 section .newsletter {
@@ -136,13 +154,36 @@ section .newsletter {
     #functions > * {
         flex-basis: 700px;
     }
+    
+}
+
+@media only screen and (max-width: 1100px) {
+    #scope div:nth-child(1) {
+        width: 80%;
+    }
+    #scope div:nth-child(2) {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 870px) {
-    /* When person resize */
+    /* Slider mobile */
     .carousel-inner .carousel-item > img {
         width: 100%;
-        height: 150%;;
+        height: 500px;
+    }
+    /* Cards for mobile or small screen */
+    #functions {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #functions > * {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* Container functions breakage size */
+    #developing > * {
+        flex-basis: 100%;
     }
     /* Form input width */
     .newsletter form {
@@ -150,7 +191,20 @@ section .newsletter {
     }
 }
 
+@media only screen and (max-width: 650px) {
+    /* Slider mobile */
+    .carousel-inner .carousel-item > img {
+        width: 100%;
+        height: 375px;
+    }
+}
+
 @media only screen and (max-width: 500px) {
+    /* Slider mobile */
+    .carousel-inner .carousel-item > img {
+        width: 100%;
+        height: 300px;
+    }
     .function {
         min-width: 100%;
     }

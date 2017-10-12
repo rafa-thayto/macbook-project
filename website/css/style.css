@@ -21,15 +21,22 @@ header img {
 
 /* Slideshare styles */
 #slideshare {
-    box-shadow: 0 2px 2px rgba(10,16,20,.24), 0 2px 2px rgba(10,16,20,.12);
-    margin: 10px 0;
-    transition: box-shadow .5s;
+    box-shadow: 0 3px 2px rgba(10,16,20,.24), 0 2px 2px rgba(10,16,20,.12);
+    transition: all .5s;
 }
 #slideshare:hover {
     box-shadow: 0 8px 8px rgba(10,16,20,.24), 0 0 8px rgba(10,16,20,.12);
+    margin-top: 10px;    
+    margin-bottom: 10px;    
 }
 #slideshare h1 {
     margin: 15px;
+}
+
+/* Create a standard width for all images */
+.carousel-inner .carousel-item > img {
+    width: 1280px;
+    height: 720px;
 }
 
 /* Scope styles */
@@ -38,11 +45,14 @@ header img {
     display: flex;
     justify-content: space-around;
     margin: 10px 0;
-    transition: box-shadow .5s;
+    transition: all .5s;
 }
 
 #scope:hover {
     box-shadow: 0 8px 8px rgba(10,16,20,.24), 0 0px 8px rgba(10,16,20,.12);
+    margin-top: 10px;    
+    margin-bottom: 10px;    
+    background: #f7f7f7;
 }
 
 #scope p {
@@ -57,38 +67,69 @@ header img {
     display: flex;
     flex-wrap: wrap;
     margin: 0 5%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #functions > * {
     flex-basis: 550px;
-}
-
-.function {
-    width: 30%;
+    margin: 5px;
+    padding: 20px;
 }
 
 .function img {
     width: 100%;
 }
-.function-1 {
-    
-}
+
 .function-2 {
-
+    box-shadow: 0 0 8px rgba(10,16,20,.24);
 }
 
-#developers {
-
+.newsletter {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
 }
-.developers-1 {
-
-}
-.developers-2 {
-
-}
-
 .newsletter input[id=email] {
     border-style: none;
     font-style: italic;
+    margin-left: 40px;
 }
+
+.newsletter button {
+    margin: 10px;
+    font-weight: 700;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Working responsiveness */
+@media only screen and (max-width: 1842px) {
+    #functions > * {
+        flex-basis: 700px;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    /* When person resize */
+    .carousel-inner .carousel-item > img {
+        width: 100%;
+        height: 150%;;
+    }
+    /* Form input width */
+    .newsletter {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /* Form input width */
+    .newsletter {
+        width: 90%;
+    }
+}
+

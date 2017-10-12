@@ -8,14 +8,15 @@ header {
 }
 
 /* Colors configurations in main content */
-main {
-    
+#scope:hover {
+    background: #f1f1f1;
 }
-
-/* Function content */
+/* Function content 
+        Card-1     */
 .function-1 {
     background: #F9F0EB;
 }
+/*      Card-2     */
 .function-2 {
     background: #FDFDFD;
 }
@@ -29,12 +30,13 @@ main {
 
 }
 
-.newsletter {
-    background: #ffffff;
-}
-
+/* footer newsletter color background */
 footer {
     background: #F9F0EB;
+}
+
+.footer-logo {
+    background: #333333;
 }
 
 

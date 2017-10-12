@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,500i,700,700i');
-
+/* Page Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +8,10 @@
     font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Font-sizes */
 h1 { font-size: 3.5rem; }
 h2 { font-size: 2.5rem; }
+p  { font-size: 1.25rem; }
 
 /* Header styles */
 header {
@@ -22,93 +24,100 @@ header img {
 /* Slideshare styles */
 #slideshare {
     box-shadow: 0 3px 2px rgba(10,16,20,.24), 0 2px 2px rgba(10,16,20,.12);
+
     transition: all .5s;
 }
 #slideshare:hover {
-    box-shadow: 0 8px 8px rgba(10,16,20,.24), 0 0 8px rgba(10,16,20,.12);
     margin-top: 10px;    
     margin-bottom: 10px;    
+    box-shadow: 0 8px 8px rgba(10,16,20,.24), 0 0 8px rgba(10,16,20,.12);
 }
 #slideshare h1 {
     margin: 15px;
 }
-
 /* Create a standard width for all images */
 .carousel-inner .carousel-item > img {
     width: 1280px;
     height: 720px;
 }
 
-/* Scope styles */
+/* Scope content styles */
 #scope {
     width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 30px;
     display: flex;
     justify-content: space-around;
-    margin: 10px 0;
+
     transition: all .5s;
 }
-
-#scope:hover {
-    box-shadow: 0 8px 8px rgba(10,16,20,.24), 0 0px 8px rgba(10,16,20,.12);
-    margin-top: 10px;    
-    margin-bottom: 10px;    
-    background: #f7f7f7;
+/* Material effect */
+#scope:hover { 
+    box-shadow: 0 8px 8px rgba(10,16,20,.24), 0 -8px 8px rgba(10,16,20,.12);
 }
-
 #scope > * {
     width: 40%;
     margin: 0 5%;
 }
-
 .scope p {
-    max-width: 500px;
+    font-size: 1.5rem;
+    max-width: 700px;
 }
-
 .scope img {
     width: 100%;
 }
 
+/* Functions content styles */
 #functions {
     display: flex;
     flex-wrap: wrap;
     margin: 0 5%;
     justify-content: space-around;
 }
-
 #functions > * {
     flex-basis: 550px;
     margin: 5px;
     padding: 20px;
     transition: box-shadow .5s;
 }
-
+/* Material effect */
 #functions > *:hover {
     box-shadow: 0 10px 8px rgba(10,16,20,.36), 0 0px 10px rgba(10,16,20,.12);
 }
-
 .function img {
     width: 100%;
 }
-
+/* Shadow in second card */
 .function-2 {
     box-shadow: 0 0 8px rgba(10,16,20,.24);
 }
 
-.newsletter {
-    width: 40%;
+/* Developers content styles */
+
+
+/* Footer Styles */
+section .newsletter {
+    margin-bottom: 30px;
+}
+.newsletter h1 {
+    padding-top: 10px;
+}
+.newsletter form{
     display: flex;
     justify-content: space-between;
+    width: 40%;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
-    height: 60px;
+    background: #ffffff;   
 }
-.newsletter input[id=email] {
+.newsletter form input[id=email] {
+    margin-left: 40px;
     border-style: none;
     font-style: italic;
-    margin-left: 40px;
 }
-
-.newsletter button {
+.newsletter form button {
     margin: 10px;
     font-weight: 700;
 }
@@ -117,8 +126,13 @@ header img {
     font-family: 'Roboto', sans-serif;
 }
 
+.footer-logo img {
+    width: 40px;
+}
+
 /* Working responsiveness */
 @media only screen and (max-width: 1842px) {
+    /* Container functions breakage size */
     #functions > * {
         flex-basis: 700px;
     }
@@ -131,7 +145,7 @@ header img {
         height: 150%;;
     }
     /* Form input width */
-    .newsletter {
+    .newsletter form {
         width: 75%;
     }
 }
@@ -141,8 +155,7 @@ header img {
         min-width: 100%;
     }
     /* Form input width */
-    .newsletter {
+    .newsletter form {
         width: 90%;
     }
 }
-

@@ -124,8 +124,11 @@ header img {
 }
 
 /* Footer Styles */
+section.newsletter {
+    height: 30vh;
+}
 section .newsletter {
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 .newsletter h1 {
     padding-top: 10px;
@@ -135,9 +138,16 @@ section .newsletter {
     justify-content: space-between;
     width: 40%;
     height: 60px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 0 6px rgba(10,16,20,.24);
     background: #ffffff;   
+
+    transition: box-shadow .5s;
+}
+.newsletter form:hover {
+    box-shadow: 0 8px 8px rgba(10,16,20,.36), 0 0px 10px rgba(10,16,20,.12);
 }
 .newsletter form input[id=email] {
     margin-left: 40px;
@@ -220,6 +230,7 @@ section .newsletter {
     }
     /* Form input width */
     .newsletter form {
+        margin-top: 40px;
         width: 90%;
     }
 }

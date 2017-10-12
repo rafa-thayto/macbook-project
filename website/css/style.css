@@ -55,12 +55,17 @@ header img {
     background: #f7f7f7;
 }
 
-#scope p {
+#scope > * {
+    width: 40%;
+    margin: 0 5%;
+}
+
+.scope p {
     max-width: 500px;
 }
 
-#scope img {
-    width: 50%;
+.scope img {
+    width: 100%;
 }
 
 #functions {
@@ -74,6 +79,11 @@ header img {
     flex-basis: 550px;
     margin: 5px;
     padding: 20px;
+    transition: box-shadow .5s;
+}
+
+#functions > *:hover {
+    box-shadow: 0 10px 8px rgba(10,16,20,.36), 0 0px 10px rgba(10,16,20,.12);
 }
 
 .function img {
@@ -127,6 +137,9 @@ header img {
 }
 
 @media only screen and (max-width: 500px) {
+    .function {
+        min-width: 100%;
+    }
     /* Form input width */
     .newsletter {
         width: 90%;

@@ -80,6 +80,7 @@ header img {
     flex-basis: 550px;
     margin: 5px;
     padding: 20px;
+    
     transition: box-shadow .5s;
 }
 /* Material effect */
@@ -98,14 +99,22 @@ header img {
 #developing {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     width: 100%;
 }
 #developing > * {
     margin: 20px auto;
     flex-basis: 550px;
+
+    transition: box-shadow .5s;
+}
+/* Material effect */
+#developing > *:hover {
+    box-shadow: 0 8px 8px rgba(10,16,20,.36), 0 0px 10px rgba(10,16,20,.12);
 }
 .developing {
     width: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.27);
 }
 .developing img {
     width: 100%;

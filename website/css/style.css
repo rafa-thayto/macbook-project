@@ -157,6 +157,9 @@ section .newsletter {
     font-family: 'Roboto', sans-serif;
 }
 
+.footer-logo {
+    padding: 1vh;
+}
 .footer-logo img {
     width: 40px;
 }

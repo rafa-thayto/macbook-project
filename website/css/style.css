@@ -86,7 +86,7 @@ header img {
 /* Material effect */
 #functions > *:hover {
     box-shadow: 0 10px 8px rgba(10,16,20,.36), 0 0px 10px rgba(10,16,20,.12);
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 .function img {
     width: 100%;
@@ -112,7 +112,7 @@ header img {
 /* Material effect */
 #developing > *:hover {
     box-shadow: 0 8px 8px rgba(10,16,20,.36), 0 0px 10px rgba(10,16,20,.12);
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 .developing {
     width: 40%;
